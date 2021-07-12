@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Year 7 Challenge</title> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="css/coda.css">
+    <link rel="stylesheet prefetch" href="css/font.css" >
+    <link rel="stylesheet" href="css/app.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <header>
+            <h1></h1>
+        </header>
+
+<img src="img/woow01.jpg" style="width:150px;height:150px;">
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+
+
+
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+
+<!--1-->
+            <li class="card" type="name">
+              <div class="content-1">¿Cómo te llamas?</div>
+            </li>
+            <li class="card" type="name">
+                <div class="content-1">Me llamo Ana</div>
+            </li>
+<!--2-->
+            <li class="card" type="age">
+                <div class="content-1">¿Cuántos años tienes?</div>
+            </li>
+            <li class="card" type="age">
+                <div class="content-1">Tengo doce años</div>
+            </li>
+<!--3-->
+            <li class="card" type="pets">
+                <div class="content-1">¿Tienes mascotas?</div>
+            </li>
+            <li class="card" type="pets">
+                <div class="content-1">Tengo un gato</div>
+            </li>
+<!--4-->
+            <li class="card" type="colour">
+                <div class="content-1">¿Cuál es tu color favorito?</div>
+            </li>
+            <li class="card" type="colour">
+                <div class="content-1">Mi color favorito es el azul</div>
+            </li>
+<!--5-->
+            <li class="card" type="bros" >
+                <div class="content-1">¿Tienes hermanos?</div>
+            </li>
+            <li class="card" type="bros">
+                <div class="content-1">Tengo una hermana</div>
+            </li>
+<!--6-->
+            <li class="card" type="sport">
+                <div class="content-1">¿Te gusta el deporte?</div>
+            </li>
+            <li class="card" type="sport">
+                <div class="content-1">Sí, juego al fútbol</div>
+            </li>
+<!--7-->
+            <li class="card" type="you">
+                <div class="content-1">¿cómo eres?</div>
+            </li>
+            <li class="card" type="you">
+                <div class="content-1">Tengo el pelo castaño</div>
+            </li>
+<!--8-->
+            <li class="card" type="home">
+                <div class="content-1">Vivo en Madrid</div>
+            </li>
+            <li class="card" type="home">
+                <div class="content-1">¿Dónde vives?</div>
+            </li>
+<!--9-->
+            <li class="card" type="person">
+                <div class="content-1">¿Qué tipo de persona eres?</div>
+            </li>
+            <li class="card" type="person">
+                <div class="content-1">Soy muy simpática</div>
+            </li>
+<!--10-->
+            <li class="card" type="study">
+                <div class="content-1">¿Qué estudias?</div>
+            </li>
+            <li class="card" type="study">
+                <div class="content-1">Estudio español</div>
+            </li> 
+<!--11-->
+            <li class="card" type="town">
+                <div class="content-1">¿Qué hay en tu pueblo?</div>
+            </li>
+            <li class="card" type="town">
+                <div class="content-1">Hay un parque</div>
+            </li>
+<!--12-->
+            <li class="card" type="do">
+                <div class="content-1">¿Qué vas a hacer este sábado?</div>
+            </li>
+            <li class="card" type="do">
+                <div class="content-1">Voy a ir de compras</div>
+            </li> 					
+        </ul>
+
+
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+
+                <img src="img/goodjob01.jpg" class="center" style="width:150px;height:150px;">
+
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    Congratulations you're a winner!
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/app.js"></script>
+
+
+
+</body>
+</html>
